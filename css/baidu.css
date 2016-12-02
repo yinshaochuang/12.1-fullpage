@@ -1,0 +1,410 @@
+body,html{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+h4,p{
+   margin: 0;padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*头部*/
+header{
+    width: 100%;
+    height: 60px;
+    background: #168bd8;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+.header a{
+    color: #fff;
+}
+.log{
+    display: block;
+    margin-top:10px ;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    background: url("../img/header_z_94c6de7.png") no-repeat 0 0;
+}
+
+.menu-option{
+    width: 20px;height: 30px;
+    margin-top:20px;margin-right: 10px;position: absolute;
+    right:10px;
+    top:0;
+    cursor: pointer;
+}
+.scene{
+    width: 100%;
+    height:280px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+    perspective: 500px;
+    transition: 2s linear 2s ;
+}
+.menu-option-tline{
+    position:absolute ;left: 0;top:10px;width: 100%;height: 2px;background: #fff;
+    transform-origin: 50% 50%;
+    transition:transform .5s ease;
+}
+.menu-option-bline{
+    position:absolute ;left: 0;top:20px;width: 100%;height: 2px;background: #fff;
+    transform-origin: 50% 50%;
+    transition:transform .5s ease;
+}
+.menu a{
+    display: none;
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,.7);
+    opacity: 0;
+    transform-style: preserve-3d;
+    transform-origin:top;
+}
+.max{
+    display: none;
+}
+
+@media screen and (min-width: 1000px){
+    .max{
+           display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+       }
+    .min{
+        display: none;
+    }
+    .log{
+        margin-bottom: 10px;
+    }
+    .home{
+        margin-bottom: 10px;
+    }
+    .last{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .home:nth-child(2){
+        margin-left: 30px;
+    }
+    .last:nth-child(5){
+        margin-left: 120px;
+        /*background: url("../img/header_z_94c6de7.png") no-repeat right -179px;*/
+    }
+    .last:last-child{
+        color: #FFDA28;
+    }
+}
+
+
+/*内容*/
+#fullpage{
+width: 100%;
+height: 400%;
+}
+section{
+    width: 100%;
+    height:25%;
+    position: relative;
+}
+section:nth-child(1){
+    background: url("../img/bg-0.jpg") no-repeat;
+}
+section:nth-child(2){
+    background: url("../img/bg-1.jpg") no-repeat;
+}
+section:nth-child(3){
+    background: url("../img/bg-2.jpg") no-repeat;
+}
+section:nth-child(4){
+    background: url("../img/bg-3.jpg") no-repeat;
+}
+
+
+.cloud{
+    width: 200%;
+    height: 100%;
+    animation: cloud 20s linear infinite;
+}
+.one{
+    width: 50%;
+    height: 100%;
+    background: url("../img/cloud_1_1d4924b.png") no-repeat;
+    background-size: cover;
+    float: left;
+}
+.two{
+    width: 50%;
+    height: 100%;
+    background: url("../img/cloud_1_1d4924b.png") no-repeat;
+    background-size: cover;
+    float: left;
+}
+.cloud1{
+    position: absolute;
+    left: 0;
+    top: 300px;
+    width: 200%;
+    height: 100%;
+    animation: cloud 50s linear infinite;
+}
+.one1{
+    width: 50%;
+    height: 100%;
+    background: url("../img/cloud_2_a186193.png") no-repeat;
+    background-size:  contain;
+    float: left;
+}
+.two1{
+    width: 50%;
+    height: 100%;
+    background: url("../img/cloud_2_a186193.png") no-repeat center ;
+    background-size: cover;
+    float: left;
+}
+
+
+.first-img{
+    height:100%;
+}
+.first-img .row{
+    height:100%;
+}
+.right{
+    height:100%;
+}
+.left{
+    height:100%;
+}
+.left img:nth-child(1){
+     position:absolute;
+     top:20%;
+ }
+.left img:nth-child(2){
+    position:absolute;
+    top:20%;
+    left: 430px;
+    animation: feiji 1s linear infinite alternate;
+}
+.chuan{
+    width: 242px;
+    height: 228px;
+    position: absolute;
+    bottom:18%;
+    left:20%;
+    opacity: 1;
+    transition: transform 1s ease ;
+}
+.left img:nth-child(3){
+    position:absolute;
+
+}
+.right img:nth-child(1){
+    position:absolute;
+    top: -48px;
+    left: -40px;
+}
+.right img:nth-child(2){
+     position:absolute;
+     top:-15px;
+     left: 60%;
+ }
+.right img:nth-child(3){
+    position:absolute;
+    top:-48px;
+    right:0;
+}
+.right img:nth-child(4){
+    position:absolute;
+    left:0;
+    right:0;  bottom: 0;
+    top:0;
+    margin: auto;
+    animation: xiala .5s linear infinite alternate;
+}
+.bottom-scene{
+    width: 100%;
+    height:17%;
+    background: rgba(11,103,190,.2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*登录界面*/
+.login{
+    width: 340px;
+    height:300px;
+    background: #4ebffc;
+    border-radius: 8px;
+    position: absolute;
+    right:10%;
+    top: 20%;
+    opacity:1;
+    transition:transform 1s ease;
+}
+.login1{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+.login input{
+    width: 100%;
+    height: 40px;
+    margin-top:20px ;
+    font-size: 16px;
+}
+.login input:nth-child(3){
+    width: 60%;
+}
+.login input:nth-child(4){
+  background: #ffd850;
+    margin-top: 35px;
+    border-radius: 6px;
+}
+.login-last{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+}
+.login-last a{
+    color: #fff;
+}
+.login-last1{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+}
+.login-last2{
+    width: 50%;
+    height: 100%;
+    float: right;
+    line-height: 40px;
+    text-align: right;
+}
+@media screen and (max-width: 1000px){
+    .login{
+        position: absolute;
+        right:0;
+        top: 0;
+        left:0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+/*领先*/
+.lingxian{
+    animation: lingxian 2s linear infinite alternate;
+}
+.lingxianbox{
+    width: 500px;
+    height: 126px;
+    position: absolute;
+    top: 30%;
+    opacity:1;
+    transition:transform 1s ease ;
+}
+.lingxianimg{
+    top:30%;
+    right:20%;
+}
+.lingxianbox1{
+    width: 66px;
+    height: 100%;
+    float: left;
+}
+.lingxianbox2{
+    width: 414px;
+    height: 100%;
+    float: left;
+}
+.lingxianbox2 h4{
+    font-size: 2em;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+.lingxianbox2 p{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.xx{
+    position: absolute;
+    top: 0;left: 0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    animation: xiala .5s linear infinite alternate;
+}
+.fankuai1{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom:0;
+    left:15%;
+    background: #35b568;;
+}
+.fankuai2{
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    bottom:0;
+    left:25%;
+    background: #4ac179;;
+}
+.fankuai3{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom:0;
+    left:32%;
+    background: #8ae75a;
+}
+.fankuai4{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom:0;
+    left:60%;
+    background: #8ae75a;
+}
+.fankuai5{
+    width: 44px;
+    height:44px;
+    position: absolute;
+    bottom:0;
+    left:70%;
+    background: #4ac179;;
+}
+
+.right .bottom-scene .bg-3{
+    position: absolute;
+    top:-20px;
+    left: 0;
+}
+section:nth-child(4) .right .bottom-scene{
+    height:30px;
+    background: none;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+section:nth-child(4) .lingxianimg{
+    right:30%;
+}

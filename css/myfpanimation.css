@@ -1,0 +1,56 @@
+@keyframes first {
+     0%{
+         transform: translate(0,0);
+     }
+     100%{
+         transform: translate(0,200px);
+     }
+ }
+@keyframes first1 {
+    0%{
+        transform: translate(0,200px);
+    }
+    100%{
+        transform: translate(0,0px);
+    }
+}
+
+@keyframes gaibian {
+    0%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes p {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes dh3 {
+    0%{
+
+    }
+    100%{
+        left: 300px;
+    }
+}
+@keyframes dh31 {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100px,0);
+    }
+}
+
+
+
